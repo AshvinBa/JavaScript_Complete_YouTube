@@ -21,7 +21,6 @@ function displayBagSummary() {
 
   let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
   
-
   bagSummaryElement.innerHTML = `
     <div class="bag-details-container">
     <div class="price-header">PRICE DETAILS (${totalItem} Items) </div>
@@ -64,8 +63,8 @@ function loadBagItemObjects() {
 function displayBagItems() {
   let containerElement = document.querySelector('.bag-items-container');
   let innerHTML = '';
-  bagItemObjects.forEach(bagItem => {
-    innerHTML += generateItemHTML(bagItem);
+  bagItemObjects.forEach(bagItems => {
+    innerHTML += generateItemHTML(bagItems);
   });
   containerElement.innerHTML = innerHTML;
 }
