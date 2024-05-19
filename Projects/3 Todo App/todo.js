@@ -36,3 +36,4 @@ function displayItems() {
   }
   containerElement.innerHTML = newHtml;
 }
+
